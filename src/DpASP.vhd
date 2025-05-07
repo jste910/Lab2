@@ -110,30 +110,29 @@ BEGIN
                 --     send.addr <= "0000" & next_1;
 
                 -- END IF;
-                IF (recv.data(16) = '0') THEN -- check if the incoming data is from channel 0
                     -- we are happy to proceed
-                    sum_0 <= sum_0 - to_integer(signed(samples_0(idx_0))) + to_integer(signed(recv.data(15 DOWNTO 0))); -- add the new data to the sum
-                    samples_0(idx_0) <= recv.data(15 DOWNTO 0); -- store the sample in the array
+                    -- sum_0 <= sum_0 - to_integer(signed(samples_0(idx_0))) + to_integer(signed(recv.data(15 DOWNTO 0))); -- add the new data to the sum
+                    -- samples_0(idx_0) <= recv.data(15 DOWNTO 0); -- store the sample in the array
                     -- calculate the average
-                    IF ((sum_0/2) > 4096) THEN
-                        send.data(15 DOWNTO 0) <= STD_LOGIC_VECTOR(to_signed(0, 16)); -- limit the average to 4096
-                        -- channel_0 <= to_signed(4096);
-                        tmp_0 <= 4096;
-                    ELSIF ((sum_0/2) <- 4096) THEN
-                        send.data(15 DOWNTO 0) <= STD_LOGIC_VECTOR(to_signed(8192, 16)); -- limit the average to -4096
-                        -- channel_0 <= signed(-4096);
-                        tmp_0 <= - 4096;
-                    ELSE
-                        send.data(15 DOWNTO 0) <= STD_LOGIC_VECTOR(to_signed(8192, 16)); -- send the average
-                        -- channel_0 <= signed(sum_0 / 2);
-                        tmp_0 <= sum_0 / 2;
-                    END IF;
-                    send.data(31 DOWNTO 16) <= STD_LOGIC_VECTOR(to_unsigned(8192, 16)); -- set the other bits to 0
+                    -- IF ((sum_0/2) > 4096) THEN
+                    --     send.data(15 DOWNTO 0) <= STD_LOGIC_VECTOR(to_signed(8192, 16)); -- limit the average to 4096
+                    --     -- channel_0 <= to_signed(4096);
+                    --     tmp_0 <= 4096;
+                    -- ELSIF ((sum_0/2) <- 4096) THEN
+                    --     send.data(15 DOWNTO 0) <= STD_LOGIC_VECTOR(to_signed(8192, 16)); -- limit the average to -4096
+                    --     -- channel_0 <= signed(-4096);
+                    --     tmp_0 <= - 4096;
+                    -- ELSE
+                    --     send.data(15 DOWNTO 0) <= STD_LOGIC_VECTOR(to_signed(8192, 16)); -- send the average
+                    --     -- channel_0 <= signed(sum_0 / 2);
+                    --     tmp_0 <= sum_0 / 2;
+                    -- END IF;
+                    send.data(15 DOWNTO 0) <= STD_LOGIC_VECTOR(to_signed(8192, 16)); -- limit the average to 4096
+                    send.data(31 DOWNTO 16) <= STD_LOGIC_VECTOR(to_unsigned(0, 16)); -- set the other bits to 0
                     send.data(16) <= recv.data(16); -- set the channel bit to the same as the incoming data
                     -- other misc operations
                     idx_0 <= (idx_0 + 1) MOD 4; -- increment the index
                     send.addr <= "0000" & next_0;
-                END IF;
 
             END IF;
         END IF;

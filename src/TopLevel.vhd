@@ -126,7 +126,7 @@ begin
 		recv  => recv_port(2)
 	);
 
-	dp_asp : entity work.dpasp
+	dp_asp : entity work.DpASP
 	port map (
 		clock => clock,
 		send  => send_port(3),
