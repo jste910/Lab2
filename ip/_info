@@ -1,0 +1,149 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0\CS701
+Eaudioclock
+Z1 w1746511562
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\altera\13.0\CS701
+Z6 8C:/altera/13.0/CS701/ip/AudioClock_2/AudioClock.vhd
+Z7 FC:/altera/13.0/CS701/ip/AudioClock_2/AudioClock.vhd
+l0
+L9
+V446^Oa[[WgVN9YYbIo3E[0
+Z8 OV;C;10.1d;51
+32
+Z9 !s108 1746575350.658000
+Z10 !s90 -reportprogress|300|-work|ip|C:/altera/13.0/CS701/ip/AudioClock_2/AudioClock.vhd|
+Z11 !s107 C:/altera/13.0/CS701/ip/AudioClock_2/AudioClock.vhd|
+Z12 o-work ip -O0
+Z13 tExplicit 1
+!s100 7E<3GnIIZALbVQ;BB49>G0
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 10 audioclock 0 22 446^Oa[[WgVN9YYbIo3E[0
+l28
+L18
+V1nf5FQfYO^ae;75=[<3MX0
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 2=OS9IJ`i32N@748F;jOP1
+!i10b 1
+Eaudiofifo
+R1
+R3
+R4
+R5
+Z14 8C:/altera/13.0/CS701/ip/AudioFifo/AudioFifo.vhd
+Z15 FC:/altera/13.0/CS701/ip/AudioFifo/AudioFifo.vhd
+l0
+L43
+VIWfCKcW9CabkCE?TQjVC51
+R8
+32
+Z16 !s108 1746575350.710000
+Z17 !s90 -reportprogress|300|-work|ip|C:/altera/13.0/CS701/ip/AudioFifo/AudioFifo.vhd|
+Z18 !s107 C:/altera/13.0/CS701/ip/AudioFifo/AudioFifo.vhd|
+R12
+R13
+!s100 m5J_fLH9AW?=7bBTB1faV1
+!i10b 1
+Asyn
+R3
+R4
+DEx4 work 9 audiofifo 0 22 IWfCKcW9CabkCE?TQjVC51
+l92
+L58
+VBm@If9`cIh2:cKOZSbb170
+R8
+32
+R16
+R17
+R18
+R12
+R13
+!s100 ^9=WLPm25I@`TV2ASGgWU0
+!i10b 1
+Eaudiorom
+R1
+Z19 DPx9 altera_mf 20 altera_mf_components 0 22 No]@D`cShSLI4UOb8Ijo62
+R3
+R4
+R5
+Z20 8C:/altera/13.0/CS701/ip/AudioRom/AudioRom.vhd
+Z21 FC:/altera/13.0/CS701/ip/AudioRom/AudioRom.vhd
+l0
+L43
+VgBcd5hCdg@jSM9oG42NGW1
+R8
+32
+Z22 !s108 1746575350.760000
+Z23 !s90 -reportprogress|300|-work|ip|C:/altera/13.0/CS701/ip/AudioRom/AudioRom.vhd|
+Z24 !s107 C:/altera/13.0/CS701/ip/AudioRom/AudioRom.vhd|
+R12
+R13
+!s100 7MV5Ef575Xd[2FCzWnk[z0
+!i10b 1
+Asyn
+R19
+R3
+R4
+DEx4 work 8 audiorom 0 22 gBcd5hCdg@jSM9oG42NGW1
+l57
+L53
+VkVJ:nDGHAIePacUALZ9BM3
+!s100 fD[MORVMJnMgG1:i==A]<0
+R8
+32
+R22
+R23
+R24
+R12
+R13
+!i10b 1
+Etdmaminfifo
+R1
+R3
+R4
+R5
+Z25 8C:/altera/13.0/CS701/ip/TdmaMinFifo/TdmaMinFifo.vhd
+Z26 FC:/altera/13.0/CS701/ip/TdmaMinFifo/TdmaMinFifo.vhd
+l0
+L43
+V>f6MVFi81<`AQ[FA50]1L3
+!s100 EO0F40UXUVSK`U[3_<LhH0
+R8
+32
+!i10b 1
+Z27 !s108 1746575350.826000
+Z28 !s90 -reportprogress|300|-work|ip|C:/altera/13.0/CS701/ip/TdmaMinFifo/TdmaMinFifo.vhd|
+Z29 !s107 C:/altera/13.0/CS701/ip/TdmaMinFifo/TdmaMinFifo.vhd|
+R12
+R13
+Asyn
+R3
+R4
+Z30 DEx4 work 11 tdmaminfifo 0 22 >f6MVFi81<`AQ[FA50]1L3
+l89
+L57
+Z31 VSVG?V_14hX?53e7I>XVG?0
+Z32 !s100 GBnNI2To7PVQ3HLPSBF7S3
+R8
+32
+!i10b 1
+R27
+R28
+R29
+R12
+R13
