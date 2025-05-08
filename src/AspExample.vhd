@@ -50,10 +50,10 @@ begin
 
 			-- Process data if available
 			if recv.data(31 downto 28) = "1000" and recv.data(16) = '0' and key(2) = '1' then
-				send.addr <= x"01";
+				send.addr <= x"03";
 				send.data <= recv.data;
 			elsif recv.data(31 downto 28) = "1000" and recv.data(16) = '1' and key(1) = '1' then
-				send.addr <= x"01";
+				send.addr <= x"03";
 				send.data <= recv.data;
 
 			-- Otherwise send configuration commands
