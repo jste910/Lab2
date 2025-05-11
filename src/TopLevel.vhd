@@ -55,7 +55,7 @@ begin
 
 	adc_dac : entity work.Audio
 	generic map (
-		enable_adc => false
+		enable_adc => true
 	)
 	port map (
 		ref_clock     => CLOCK3_50,
@@ -109,21 +109,28 @@ begin
 		recv  => recv_port(1)
 	);
 
-	asp_example : entity work.AspExample
-	port map (
-		clock => clock,
-		key   => KEY,
-		sw    => SW,
-		ledr  => LEDR,
-		hex0  => HEX0,
-		hex1  => HEX1,
-		hex2  => HEX2,
-		hex3  => HEX3,
-		hex4  => HEX4,
-		hex5  => HEX5,
+	-- asp_example : entity work.AspExample
+	-- port map (
+	-- 	clock => clock,
+	-- 	key   => KEY,
+	-- 	sw    => SW,
+	-- 	ledr  => LEDR,
+	-- 	hex0  => HEX0,
+	-- 	hex1  => HEX1,
+	-- 	hex2  => HEX2,
+	-- 	hex3  => HEX3,
+	-- 	hex4  => HEX4,
+	-- 	hex5  => HEX5,
 
-		send  => send_port(2),
-		recv  => recv_port(2)
+	-- 	send  => send_port(2),
+	-- 	recv  => recv_port(2)
+	-- );
+
+	help : entity work.niosii
+	port map (
+		clk => clock,
+		send => send_port(2),
+		recv => recv_port(2)
 	);
 
 	dp_asp : entity work.DpASP

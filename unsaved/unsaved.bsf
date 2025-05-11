@@ -1,0 +1,92 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 560 264)
+	(text "unsaved" (rect 257 -1 291 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 248 20 260)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 27 12)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 46 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 256 72)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "recv_address_external_connection_export[7..0]" (rect 0 0 191 12)(font "Arial" (font_size 8)))
+		(text "recv_address_external_connection_export[7..0]" (rect 4 101 274 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 256 112)(line_width 3))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "recv_data_external_connection_export[31..0]" (rect 0 0 179 12)(font "Arial" (font_size 8)))
+		(text "recv_data_external_connection_export[31..0]" (rect 4 141 262 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 256 152)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(output)
+		(text "send_address_external_connection_export[7..0]" (rect 0 0 191 12)(font "Arial" (font_size 8)))
+		(text "send_address_external_connection_export[7..0]" (rect 4 181 274 192)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 256 192)(line_width 3))
+	)
+	(port
+		(pt 0 232)
+		(output)
+		(text "send_data_external_connection_export[31..0]" (rect 0 0 179 12)(font "Arial" (font_size 8)))
+		(text "send_data_external_connection_export[31..0]" (rect 4 221 262 232)(font "Arial" (font_size 8)))
+		(line (pt 0 232)(pt 256 232)(line_width 3))
+	)
+	(drawing
+		(text "clk" (rect 241 43 500 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 261 67 540 144)(font "Arial" (color 0 0 0)))
+		(text "recv_address_external_connection" (rect 55 83 302 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 261 107 558 224)(font "Arial" (color 0 0 0)))
+		(text "recv_data_external_connection" (rect 77 123 328 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 261 147 558 304)(font "Arial" (color 0 0 0)))
+		(text "send_address_external_connection" (rect 51 163 294 339)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 261 187 558 384)(font "Arial" (color 0 0 0)))
+		(text "send_data_external_connection" (rect 73 203 320 419)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 261 227 558 464)(font "Arial" (color 0 0 0)))
+		(text " unsaved " (rect 521 248 1096 506)(font "Arial" ))
+		(line (pt 256 32)(pt 304 32)(line_width 1))
+		(line (pt 304 32)(pt 304 248)(line_width 1))
+		(line (pt 256 248)(pt 304 248)(line_width 1))
+		(line (pt 256 32)(pt 256 248)(line_width 1))
+		(line (pt 257 52)(pt 257 76)(line_width 1))
+		(line (pt 258 52)(pt 258 76)(line_width 1))
+		(line (pt 257 92)(pt 257 116)(line_width 1))
+		(line (pt 258 92)(pt 258 116)(line_width 1))
+		(line (pt 257 132)(pt 257 156)(line_width 1))
+		(line (pt 258 132)(pt 258 156)(line_width 1))
+		(line (pt 257 172)(pt 257 196)(line_width 1))
+		(line (pt 258 172)(pt 258 196)(line_width 1))
+		(line (pt 257 212)(pt 257 236)(line_width 1))
+		(line (pt 258 212)(pt 258 236)(line_width 1))
+		(line (pt 0 0)(pt 560 0)(line_width 1))
+		(line (pt 560 0)(pt 560 264)(line_width 1))
+		(line (pt 0 264)(pt 560 264)(line_width 1))
+		(line (pt 0 0)(pt 0 264)(line_width 1))
+	)
+)

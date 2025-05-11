@@ -1,0 +1,9 @@
+13:48:18 **** Build of configuration Nios II for project hele_ME ****
+make all 
+Info: Building ../hele_ME_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../hele_ME_bsp/
+[BSP build complete]
+[hele_ME build complete]
+
+13:48:19 Build Finished (took 863ms)
+
