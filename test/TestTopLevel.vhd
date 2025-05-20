@@ -34,7 +34,7 @@ begin
 
 	asp_adc : entity work.TestAdc
 	generic map (
-		forward => 3
+		forward => 1
 	)
 	port map (
 		clock => clock,
@@ -48,13 +48,5 @@ begin
 		send  => send_port(1),
 		recv  => recv_port(1)
 	);
-
-	dp_asp : entity work.dpasp
-	port map (
-		clock => clock,
-		send  => send_port(3),
-		recv  => recv_port(3)
-	);
-
 
 end architecture;
